@@ -1,15 +1,15 @@
-require_relative '.\nameable'
+require_relative './decorator'
 
 class Person < Nameable
   attr_accessor :name, :age
   attr_reader :id
 
   def initialize(age, name = 'Unknown', parent_permission: true)
-    super
     @id = Random.rand(1...1000)
     @name = name
     @age = age
     @parent_permission = parent_permission
+    super()
   end
 
   def can_use_services?
@@ -31,14 +31,9 @@ class Person < Nameable
   end
 end
 
-j = Person.new(18, 'John')
-pp j
-j.can_use_services?
-
-m = Person.new(16, 'Martin', parent_permission: false)
-pp m
-m.can_use_services?
-
-paul = Person.new(16, 'Paul')
-pp paul
-paul.can_use_services?
+person = Person.new(22, 'maximilianus')
+person.correct_name
+capitalized_person = CapitalizeDecorator.new(person)
+capitalized_person.correct_name
+capitalized_trimmed_person = TrimmerDecorator.new(capitalized_person)
+capitalized_trimmed_person.correct_name
