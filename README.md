@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 # 📗 Table of Contents
 
-- [� Table of Contents](#-table-of-contents)
+- [📗 Table of Contents](#-table-of-contents)
 - [📖 \[School Library\] ](#-school-library-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
@@ -30,8 +30,6 @@
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <ul>
@@ -78,7 +76,7 @@ Clone this repository to your desired folder:
 To run the project, execute the following command:
 
 ```sh
-  irb main.rb
+  irb person.rb
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -86,8 +84,6 @@ To run the project, execute the following command:
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Martin Perez Bazan**
 
@@ -101,8 +97,6 @@ To run the project, execute the following command:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[Use Decorator design pattern]**
 - [ ] **[Add basic UI]**
