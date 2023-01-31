@@ -76,7 +76,7 @@ Clone this repository to your desired folder:
 To run the project, execute the following command:
 
 ```sh
-  irb person.rb
+  ruby app.rb
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
