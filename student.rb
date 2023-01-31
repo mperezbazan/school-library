@@ -14,13 +14,3 @@ class Student < Person
     '"¯\(ツ)/¯"'
   end
 end
-
-math = Classroom.new('Maths')
-math.students
-
-tem = Student.new(math, 22, 'Martin')
-tem2 = Student.new(math, 15, 'Luis')
-p tem
-p tem2
-p math
-
