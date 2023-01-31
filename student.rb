@@ -2,10 +2,11 @@ require_relative './person'
 require_relative './classroom'
 
 class Student < Person
-  attr_reader :classroom
+  def initialize(age, permission, name = 'Unknown')
+    super(age, name, parent_permission: permission)
+  end
 
-  def initialize(classroom, age, name = 'Unknown')
-    super(age, name)
+  def classroom(classroom)
     @classroom = classroom
     classroom.students.push(self) unless classroom.students.include?(self)
   end
