@@ -23,10 +23,6 @@ class Person < Nameable
     @name
   end
 
-  def get_rentals
-    @rentals
-  end
-
   private
 
   def of_age?

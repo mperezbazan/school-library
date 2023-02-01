@@ -5,15 +5,15 @@ require_relative './rental'
 require_relative './library'
 
 def list_books(library)
-  library.books.each {| book | 
+  library.books.each do |book|
     puts "Title: \"#{book.title}\", Author: #{book.author}"
-  }
+  end
 end
 
 def list_persons(library)
-  library.persons.each { |person| 
+  library.persons.each do |person|
     puts "[#{person.class.name}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
-  }
+  end
 end
 
 def create_person(type, age, name, option, library)
@@ -51,7 +51,7 @@ end
 def list_rentals(id, library)
   person_selected = library.persons.find { |person| person.id == id.to_i }
   puts 'Rentals:'
-  person_selected.get_rentals.each do |rental|
+  person_selected.rentals.each do |rental|
     puts "Date: #{rental.date}, Book \"#{rental.book.title}\" by #{rental.book.author}"
   end
 end

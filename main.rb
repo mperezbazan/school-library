@@ -33,7 +33,7 @@ def ask_person_params(library)
   create_person(type_person, age, name, option, library)
 end
 
-def ask_param (title)
+def ask_param(title)
   print "#{title}: "
   gets.chomp
 end
